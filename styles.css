@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+:root{--green:#176b45;--green-dark:#104d34;--mint:#e8f6ec;--cream:#fffaf0;--ink:#17372a;--muted:#6d8176;--line:#e6eee7}
+*{box-sizing:border-box}
+html{min-height:100%;background:#f4f8f2}
+body{margin:0;font-family:"Cairo",Tahoma,Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 8% 5%,#e2f4e7 0,transparent 28%),radial-gradient(circle at 95% 55%,#fff0d4 0,transparent 25%),#f7faf5;min-height:100vh}
+a{color:inherit;text-decoration:none}
+.page-shell{position:relative;isolation:isolate;max-width:520px;min-height:100vh;margin:auto;padding:32px 22px 26px;overflow:hidden}
+.ambient{position:absolute;z-index:-1;border-radius:50%;filter:blur(1px);opacity:.5;pointer-events:none}
+.ambient-one{width:190px;height:190px;background:#d5efdc;top:130px;left:-120px}
+.ambient-two{width:150px;height:150px;background:#ffe9bc;right:-100px;top:410px}
+.brand{text-align:center;padding:4px 0 24px}
+.logo-wrap{width:106px;height:106px;margin:0 auto 13px;border-radius:32px;background:#fff;box-shadow:0 12px 35px #184d3218;border:1px solid #ffffff;display:grid;place-items:center;overflow:hidden;position:relative}
+.logo{width:100%;height:100%;object-fit:contain;padding:8px}
+.logo-fallback{display:none;place-items:center;font-size:48px;width:100%;height:100%;background:linear-gradient(145deg,#fff,#e7f6e9)}
+.eyebrow{margin:0 0 3px;color:var(--green);font-size:13px;font-weight:800;letter-spacing:.3px}
+h1{font-size:clamp(27px,7vw,36px);line-height:1.35;margin:0;font-weight:900;letter-spacing:-.7px}
+h1 span{color:var(--green)}
+.tagline{margin:9px 0 0;color:#66776d;line-height:1.9;font-size:14px}
+.tagline strong{color:var(--green-dark);font-size:16px}
+.actions{display:grid;gap:13px}
+.action-card{min-height:94px;display:flex;align-items:center;gap:14px;padding:15px 16px;border-radius:25px;border:1px solid #ffffffc9;background:#fff;box-shadow:0 9px 25px #183f2b0b;transition:transform .18s ease,box-shadow .18s ease;position:relative;overflow:hidden}
+.action-card:active{transform:scale(.985)}
+.action-card:hover{box-shadow:0 14px 30px #183f2b16;transform:translateY(-2px)}
+.icon-box{width:58px;height:58px;border-radius:19px;display:grid;place-items:center;flex:0 0 auto}
+.icon-box svg{width:29px;height:29px;fill:currentColor}
+.whatsapp .icon-box{background:#e3f8e8;color:#159447}
+.menu .icon-box{background:#fff0d8;color:#a96412}
+.facebook .icon-box{background:#e7efff;color:#2463d5}
+.card-copy{display:flex;flex-direction:column;gap:3px;flex:1;min-width:0}
+.card-copy strong{font-size:16px;font-weight:900}
+.card-copy small{font-size:12px;color:var(--muted)}
+.arrow{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#f4f7f3;color:#557464;font-size:19px;flex:0 0 auto}
+.promise{display:flex;align-items:center;gap:13px;background:linear-gradient(110deg,#176b45,#218052);color:#fff;border-radius:25px;margin-top:23px;padding:17px 16px;box-shadow:0 12px 25px #176b4525}
+.promise-icon{width:49px;height:49px;border-radius:17px;background:#ffffff20;display:grid;place-items:center;font-size:25px;flex:0 0 auto}
+.promise h2{font-size:15px;margin:0 0 3px;font-weight:900}
+.promise p{font-size:11px;line-height:1.7;margin:0;color:#e0f2e5}
+.details{display:grid;gap:10px;margin-top:17px}
+.detail{display:flex;align-items:center;gap:12px;padding:12px 14px;background:#ffffffa8;border:1px solid #e9f0e8;border-radius:19px}
+.detail>span{font-size:22px;width:36px;text-align:center}
+.detail p{margin:0;display:flex;flex-direction:column;gap:1px}
+.detail strong{font-size:12px}
+.detail small{font-size:11px;color:var(--muted);line-height:1.7}
+footer{text-align:center;padding-top:20px;color:#718177;font-size:11px}
+footer p{margin:5px 0}
+.install-button{width:100%;margin:12px 0 8px;padding:14px 16px;border:0;border-radius:17px;background:#f7b844;color:#4a3108;font:800 14px "Cairo",sans-serif;box-shadow:0 8px 20px #dba53b30;cursor:pointer}
+.footer-note{font-weight:700;color:var(--green)}
+@media(min-width:600px){body{padding:22px 0}.page-shell{min-height:auto;border-radius:36px;background:#f8fbf6d9;box-shadow:0 25px 90px #254b3210;border:1px solid #fff;padding:36px 28px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
